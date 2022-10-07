@@ -121,13 +121,13 @@
 						
 					</ul>
 					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
+						
 						<li class="dropdown-gg" >
 							{% if request.session.session_KhachHang %}
 							<a class="dropbtn-gg" href="#">
 							<i class="fa fa-user-o"></i> {{ request.session.session_KhachHang.first_name }} {{ request.session.session_KhachHang.last_name }}</a>
 							<div class="dropdown-content-gg">
-								
+								<a href="{% url 'customer:my_account' %}" class="dropdown-item">Thông tin của tôi</a>
 								<a href="{% url 'customer:customer_logout' %}" class="dropdown-item">Đăng xuất</a>
 							</div>
 						{% else %}
