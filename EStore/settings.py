@@ -81,7 +81,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'EStore.wsgi.application'
-
+CSRF_TRUSTED_ORIGINS = ['https://shop-gear.herokuapp.com/']
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
