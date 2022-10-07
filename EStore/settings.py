@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-_8&y0*-^t%4^0e6dr(wci)^iq1hp6var&!2_l#n=nu!e!5s&c3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['shop-gear.herokuapp.com', 'localhost', '127.0.0.1']
-
+ALLOWED_HOSTS = ['https://shop-gear.herokuapp.com', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://shop-gear.herokuapp.com/']
 
 # Application definition
 
@@ -81,7 +81,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'EStore.wsgi.application'
-CSRF_TRUSTED_ORIGINS = ['https://shop-gear.herokuapp.com/']
+
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
