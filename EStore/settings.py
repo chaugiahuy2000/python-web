@@ -92,9 +92,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-CSRF_TRUSTED_ORIGINS = [
-    'https://hemant-to-do.herokuapp.com'
-]
+
 
 # DATABASES = {
 #     'default': {
