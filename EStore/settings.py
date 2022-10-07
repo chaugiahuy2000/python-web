@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_8&y0*-^t%4^0e6dr(wci)^iq1hp6var&!2_l#n=nu!e!5s&c3
 DEBUG = True
 
 ALLOWED_HOSTS = ['https://shop-gear.herokuapp.com', 'localhost', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://shop-gear.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://shop-gear.herokuapp.com']
 
 # Application definition
 
