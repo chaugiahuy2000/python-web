@@ -354,11 +354,11 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="{{ product.image.url }}" alt="">
+										<img href="{% url 'store:product_detail' product.pk %}" src="{{ product.image.url }}" alt="">
 									</div>
 									<div class="product-body">
 										
-										<h3 class="product-name"><a href="#">{{product.name}}</a></h3>
+										<h3 href="{% url 'store:product_detail' product.pk %}" class="product-name"><a href="#">{{product.name}}</a></h3>
 										<h4 class="product-price">{{ product.price|floatformat:'0'|intcomma}}VNĐ<del class="product-old-price">{{ product.price_origin|floatformat:'0'|intcomma }}VNĐ</del></h4>
 									</div>
 								</div>
