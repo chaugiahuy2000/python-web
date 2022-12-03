@@ -1,8 +1,9 @@
 from django.contrib import admin
 from store.models import Product
+from customer.models import Customer
 from datetime import datetime
 from django.utils.html import format_html
-
+from cart.models import Order,OrderItem
 
 # Register your models here.
 def change_public_day(modeladmin, request, queryset):
@@ -56,6 +57,8 @@ class ProductAdmin(admin.ModelAdmin):
         return format_html('<img src="{}" alt="{}" width="45px" height="45px" />'.format(obj.image.url, obj.name))
 
 admin.site.register(Product, ProductAdmin)
-
+admin.site.register(Order)
+admin.site.register(OrderItem)
+admin.site.register(Customer)
 # Thay đổi tiêu đề
 admin.site.site_header = 'EStore Administration'
